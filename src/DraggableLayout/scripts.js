@@ -33,7 +33,7 @@ var isDialogOpen = false,
 
 var count = 3;
     
-var ico_people = './img/people.png';
+var ico_people = 'https://raw.githubusercontent.com/JordiCorbilla/WebDevSnippets/master/src/DraggableLayout/img/people.png';
 
 $(document).ready(function () {
   renderBoxes();
