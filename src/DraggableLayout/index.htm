@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+// Copyright (c) 2016, Jordi Corbilla
+// All rights reserved.
+//
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions are met:
+//
+// - Redistributions of source code must retain the above copyright notice,
+// this list of conditions and the following disclaimer.
+// - Redistributions in binary form must reproduce the above copyright notice,
+// this list of conditions and the following disclaimer in the documentation
+// and/or other materials provided with the distribution.
+// - Neither the name of this library nor the names of its contributors may be
+// used to endorse or promote products derived from this software without
+// specific prior written permission.
+//
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+// POSSIBILITY OF SUCH DAMAGE.
+-->
+<html>
+<head>  
+  <meta charset=utf-8 />
+  <title>Draggable Layout by Jordi Corbilla</title>
+  <script src="http://cdn.jsdelivr.net/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+  <script class="jsbin" src="http://cdn.jsdelivr.net/raphael/2.1.0/raphael-min.js"></script>
+  <script src="http://cdn.jsdelivr.net/jsrender/1.0pre35/jsrender.min.js"></script>
+  <script src="scripts.js"></script>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body">
+  
+  <div id="pnlMain">
+  </div>
+      
+  <script id="boxTemplate" type="text/x-jsrender">
+    <div class="box {{:style}}">
+      <input type="hidden" value="{{:id}}" />
+      <img alt="" src="" />
+      <ul class="name">
+        <li><h2>{{:id}}. {{:name}}</h2></li>
+        <li>{{:email}}</li>
+      </ul>
+    </div>
+  </script>
+  
+  <a id="AddUser" href="#">Add Box</a>
+
+  <div style="margin-top: 20px;">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+  </div>
+</body>
+</html>
